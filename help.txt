@@ -1,0 +1,5 @@
+1.when install any package do --save so that it get listed in package.json and can be installed latter by simply "npm i"
+
+2.Above is more neccsaary when only old version of some package is needed in my case it is bcrypt and version is 3.something
+
+

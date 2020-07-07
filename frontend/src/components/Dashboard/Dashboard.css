@@ -1,0 +1,57 @@
+#p {
+  border: 10px solid black;
+  
+  /* display: flex; */
+  
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20vw;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 60vw;
+  padding: 10px;
+  height: 45vw; /* Should be removed. Only for demonstration */
+  overflow: scroll;
+}
+
+.column3 {
+  float: left;
+  width: 20vw;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
