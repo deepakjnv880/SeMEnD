@@ -3,11 +3,13 @@ A MERN webapp on which one can sell book after end of semester or final examinat
 
 # How to install
 Make sure npm is install on your system if not install with following command -<br/>
+
     sudo apt install npm
 
-[Install Mongodb](https://linuxize.com/post/how-to-install-mongodb-on-ubuntu-18-04/)
+[Also Install Mongodb](https://linuxize.com/post/how-to-install-mongodb-on-ubuntu-18-04/)
 
 Go to both the folder one by one then type the follwing command -
+
     npm i
     npm start
    
