@@ -31,7 +31,7 @@ class Upload extends React.Component {
     data.append('file',this.state.file);
     data.append('written_text',this.state.written_text);
     data.append('token',JSON.parse(localStorage.getItem('userTokenTime')).token);
-    axios.post('/api/upload', data, 
+    axios.post('/api/upload', data,
     {
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ class Upload extends React.Component {
       this.setState({
         redirect: true
       });
-      console.log("Upload succesfull",res) 
+      console.log("Upload succesfull",res)
     }).catch(err => {
       console.log(`Upload Fail with status: ${err.statusText}`);
     });
@@ -78,7 +78,7 @@ class Upload extends React.Component {
               <button
                 type="button"
                 className="btn-success"
-                
+
                 onClick={this.fileUploadHandler.bind(this)}>Submit
               </button>
           </form>
